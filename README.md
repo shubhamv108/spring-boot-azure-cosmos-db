@@ -8,10 +8,11 @@
 ```cd $JAVA_HOME/lib/security```
 ```keytool -importcert -alias cacerts -keystore cacerts -file ~/emulatorcert.crt```
 
-4. ```
+4. Add VM Options 
+```
    -Djavax.net.ssl.trustStore=/usr/lib/jvm/jdk-21-oracle-x64/lib/security/cacerts
    -Djavax.net.ssl.trustStoreType=JKS
-   ```
+```
    
 
 
